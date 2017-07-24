@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Song App</title>
+        
+            <link rel="stylesheet" type="text/css" href="font-awesome.css">
+            <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+            <link rel="stylesheet" type="text/css" href="main.css">
+             <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        
+</head>
+
+<body style="background-image: url('https://media.giphy.com/media/26BRGoqbUQvk8nwTC/giphy.mp4');
+background-size: cover;">
+
+    <div class="wrapper">
+        <section class="welcome-screen hidden">
+            <h1> Welcome to Songify </h1>
+            <h3> Enter name to access your account </h3>
+            <div class="input-wrapper">
+                <input type="text" placeholder="Name" id="name-input">
+                <button> Go </button>
+            </div>
+        </section>
+
+  
+
+            
+            
+        <div class="main">
+            <header class="header">
+                <div class="right floated user-name"> </div>
+                  <nav class="navbar navbar-inverse">
+                          <div class="container-fluid" >
+                            <div class="navbar-header" style="width:200px">
+            <a class="navbar-brand" href="#"><span class="pandora"><b>Pandora </b></span> </a>
+    </div>
+    <ul class="nav navbar-nav">
+            <li class="active"><a href="#"><span class="pandora2 showplayist">Home</span></a></li>
+            <li><a href="#"><span class="pandora2 moodlist">Mood List</span></a></li>
+            <li><a href="#"><span class="pandora2">About</span></a></li>
+            <li><a href="#"><span class="pandora2">Feedback</span></a></li>            
+</ul>       
+  </div>
+</nav>
+                  
+            </header>
+             <section class="content">
+                     
+             <audio src="song1.mp3"></audio>
+                     
+                                 <div >
+                     
+<!--
+                <div class="list-headers">
+        <div> Title </div> 
+        <div> Artist </div>
+        <div> Album </div>
+        <div> Duration </div>
+        </div>
+                    
+
+          <div class="song-list">
+                         <div class="song" id="song1">
+                <span  class="song-name"></span>
+                <span  class="song-artist"></span>
+                <span  class="song-album"></span>
+                <span class="song-length"></span>
+            </div>
+              
+            <div class="song" id="song2">
+                <span  class="song-name"></span>
+                 <span  class="song-artist"></span>
+                 <span  class="song-album"></span>
+                <span  class="song-length"></span>
+            </div>
+              
+            <div class="song"  id="song3">
+                <span  class="song-name"></span>
+                 <span  class="song-artist"></span>
+                 <span class="song-album"></span>
+                <span  class="song-length"></span>
+            </div>
+              
+            <div class="song" id="song4">
+                <span  class="song-name"></span>
+                 <span  class="song-artist"></span>
+                 <span  class="song-album"></span>
+                <span  class="song-length"></span>
+                
+                  </div>
+        </div>
+                     
+-->
+                    <div class="current-song-wrapper">
+                    <img class="current-song-image">
+                    <div>
+                            <p class ="current-song-name"></p>
+                            <p class="current-song-album"></p>
+                            </div>
+                    </div>
+                     </div>
+                       <div style="overflow:auto;height:310px;">      
+                     <table id="songs" style="border: 1px solid transparent;" >
+                            <thead class="list-headers">
+                                    <tr><td> Title </td>
+                                    <td> Artist </td>
+                                    <td> Album </td>
+                                    <td> Duration </td>
+                                </tr></thead>
+                         
+                             
+                             
+                             
+                                <!-- <div class="song-list"> -->
+                             
+                                    <tbody><tr class="song" id="song1">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>
+                                    <tr class="song" id="song2">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>
+                                    <tr class="song" id="song3">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>
+                                    <tr class="song" id="song4">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>
+                                             <tr class="song" id="song5">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>
+                                               <tr class="song" id="song6">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>  
+                                     <tr class="song" id="song7">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr> 
+                                             <tr class="song" id="song8">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>
+                                             <tr class="song" id="song9">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>     
+                                 
+                                <!-- </div> -->
+                             </tbody></table>
+                             </div>                           
+                     
+                
+                   
+                           <ul  class="moodimage hidden">
+                             <li><a href="#"><span class="peace mimages"><img  id="peace" src="http://i.imgur.com/uPeTerr.jpg?2"></span></a></li>
+                             <li><a href="#"><span class="frolic mimages">&nbsp;<img src="http://i.imgur.com/B2JwogW.jpg?2"></span></a></li>
+                             <li><a href="#"><span class="morose mimages"><img src="http://i.imgur.com/8B2rSn1.jpg?3"></span></a></li>
+                     </ul>
+                     
+                     
+
+    
+            </section>
+                
+<!--
+                
+                <div class="current-song-wrapper" >
+                     <img src="img/song1.jpg"width="32px" height="32px"
+                          class="current-song-image"><br>
+                        <div>
+                             <p class="current-song-name">Bad Liar</p>
+                             <p class="current-song-album">Bad Liar</p>
+                             </div>     
+                     </div>
+-->
+                
+            <footer >
+                <div class="controls">
+                       
+                    <div class="player-buttons">
+                        <i class="fa fa-play clickable play-icon" aria-hidden="true"></i>
+                        
+                            
+                    </div>
+                            
+                   
+                    <div class="progress-wrapper">
+                        <span class="time-elapsed"> </span>
+                        <div class="player-progress" >
+                            <div class="progress-filled"> </div>
+                        </div>
+                        <span class="song-duration"></span>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+      
+                    <script src="jquery.js">
+                    </script>
+                    <script src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js">
+                    </script>
+                    <script src="main.js"></script>
+
+</body>
+ 
+</html>
