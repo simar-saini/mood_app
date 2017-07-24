@@ -109,7 +109,32 @@ function updateCurrentTime() {
     }
  ];
 
-
+//var songss[           
+//      {
+//        'name': 'All Of Me',
+//        'artist': 'John Legend ',
+//        'album': 'Love In The Future',
+//        'duration': '4:49',
+//        'fileName': 'song5.mp3',
+//            'image':'song5.jpg'
+//    },
+//           {
+//        'name': 'Malibu',
+//        'artist': 'Miley Cyrus',
+//        'album': 'Malibu(Miley Cyrus)',
+//        'duration': '3:48',
+//        'fileName': 'song6.mp3',
+//        'image':'song6.jpg'
+//    },
+//                                {
+//        'name': 'Mashup(unplugged)',
+//        'artist': 'Mohit chauhan',
+//        'album': ' Coke Studio',
+//        'duration': '9:38',
+//        'fileName': 'song9.mp3',
+//        'image':'song9.png'
+//    } 
+//];
 
 
 
@@ -240,5 +265,10 @@ $('.moodlist').on('click', function() {
 });
 $('.showplayist').on('click', function() {
                 $('.dataTables_wrapper').removeClass('hidden');
+                $('.moodimage').addClass('hidden');
+});
+
+$('.moodimage').on('click', function() {
+                $('.dataTables_peace1').removeClass('hidden');
                 $('.moodimage').addClass('hidden');
 });

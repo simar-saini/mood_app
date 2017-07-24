@@ -251,6 +251,7 @@ li{
 
              
 }
+
 .morose{
         padding: 4px;
         
@@ -305,3 +306,8 @@ li{
 .wrapper{
 background-image: url('https://media.giphy.com/media/26BRGoqbUQvk8nwTC/giphy.mp4');
 background-size: cover;}
+
+.dataTables_wrapper{
+        overflow: auto;
+        height: 310px;
+}
