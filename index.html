@@ -15,8 +15,7 @@
         
 </head>
 
-<body style="background-image: url('https://media.giphy.com/media/26BRGoqbUQvk8nwTC/giphy.mp4');
-background-size: cover;">
+<body >
 
     <div class="wrapper">
         <section class="welcome-screen hidden">
@@ -173,10 +172,28 @@ background-size: cover;">
                                         <td class="song-album"></td>
                                         <td class="song-length"></td>
                                     </tr>     
-                                 
+                                   <tr class="song" id="song10">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr>  
+                                             <tr class="song" id="song11">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr> 
+                                             <tr class="song" id="song12">
+                                        <td class="song-name"></td>
+                                        <td class="song-artist"></td>
+                                        <td class="song-album"></td>
+                                        <td class="song-length"></td>
+                                    </tr> 
                                 <!-- </div> -->
                              </tbody></table>
 <!--                             </div>  -->
+                     
         <!--             
                     <div class="current-song-wrapper">
                     <img class="current-song-image">
@@ -186,7 +203,7 @@ background-size: cover;">
                             </div>
                     </div> -->
                      
-                     
+                              
                 
                    
                            <ul  class="moodimage hidden">
@@ -240,6 +257,25 @@ background-size: cover;">
                     </script>
                     <script src="main.js"></script>
                 <script src="mood.js"></script>
+               <script>
+         $(document).ready(function () {
+          $("#slider").slider(
+          {
+              min: 0,
+              max: 100,
+              step: 1,
+              change: showValue
+
+          });
+          $("#update").click(function () {
+              $("#slider").slider("option", "value", $("#seekTo").val());
+
+          });
+          function showValue(event, ui) {
+              $("#val").html(ui.value);
+          }
+      });
+        </script>        
 
 </body>
  

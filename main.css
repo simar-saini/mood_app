@@ -227,12 +227,12 @@ li{
 }
 .peace{
         
-        padding:4px;
+        padding:6px;
       
 }
 .peace img{
-         height:150px;
-        width:150px;
+         height:170px;
+        width:170px;
         
         
         
@@ -241,24 +241,24 @@ li{
         align-content: flex-start;
 }
 .frolic{
-        padding:4px;
+        padding:6px;
          
 }
 .frolic img{
-        height:150px;
-        width:150px;
+        height:170px;
+        width:170px;
         border: 5px double rgba(8, 22, 52, 0.6);
 
              
 }
 
 .morose{
-        padding: 4px;
+        padding: 6px;
         
 }
 .morose img{
-        height:150px;
-        width:150px;
+        height:170px;
+        width:170px;
        
        
         
@@ -288,7 +288,7 @@ li{
 .moodimage{
         align-content: center;
         margin-left:98px;
-        
+         margin-bottom: 200px;
 }
 .dataTables_filter input{
         color: black;
@@ -299,10 +299,9 @@ li{
         width:250px;
         border-radius: 15px;
         margin-right: 15px;
+        margin-top: 1rem;
 }
-.mimages{
-        margin-bottom: 200px;
-}
+
 .wrapper{
 background-image: url('https://media.giphy.com/media/26BRGoqbUQvk8nwTC/giphy.mp4');
 background-size: cover;}
@@ -311,3 +310,15 @@ background-size: cover;}
         overflow: auto;
         height: 310px;
 }
+.main
+{
+        background: url("https://media.giphy.com/media/UlE4s2IJsufvi/giphy.gif" );
+        background-size: contain;
+        color: #d0dce3;      
+}
+#songs_wrapper{
+        background-color:rgba(224, 224, 229, 0.1);
+        
+}
+.main .content{
+background-color: transparent;}

@@ -1,4 +1,4 @@
- var songs = [{
+ var peace = [{
         'name': 'Bad Liar',
         'artist': 'Selena Gomez',
         'album': 'Bad Liar(selena gomez)',
