@@ -31,7 +31,7 @@ function updateCurrentTime() {
         
                   
 
-  var songs = [{
+var songs = [{
         'name': 'Bad Liar',
         'artist': 'Selena Gomez',
         'album': 'Bad Liar(selena gomez)',
@@ -98,39 +98,7 @@ function updateCurrentTime() {
         'duration': '3:24',
         'fileName': 'song8.mp3',
         'image':'song8.jpg'
-    },
-                                {
-        'name': 'Mashup(unplugged)',
-        'artist': 'Mohit chauhan',
-        'album': ' Coke Studio',
-        'duration': '9:38',
-        'fileName': 'song9.mp3',
-        'image':'song9.png'
-    },
-                   {
-        'name': 'Hymn For The Weekend',
-        'artist': 'Coldplay',
-        'album': 'Newyork concert ',
-        'duration': '3:55',
-        'fileName': 'song10.mp3',
-        'image':'song10.jpg'
-    },
-          {
-        'name': 'Im Not Just a Preety Girl',
-        'artist': 'Maggie Lindemann',
-        'album': ' Preety Girl',
-        'duration': '3:40',
-        'fileName': 'song11.mp3',
-        'image':'song11.jpg'
-    },
-            {
-        'name': 'Wrecking Ball',
-        'artist': 'Miley Cyrus',
-        'album': 'Wrecking Ball ',
-        'duration': '3:41',
-        'fileName': 'song12.mp3',
-        'image':'song12.jpg'
-    },
+    }
  ];
 
 //var songss[           
@@ -292,5 +260,8 @@ $('.showplayist').on('click', function() {
                 $('.moodimage').addClass('hidden');
 });
 
-
+$('.m1').on('click', function() {
+                $('.dataTables_wrapper').removeClass('hidden');
+                $('.m2').addClass('hidden');
+});
 

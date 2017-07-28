@@ -207,9 +207,9 @@
                 
                    
                            <ul  class="moodimage hidden">
-                             <li><a href="#"><span class="peace mimages "><img  id="peace" src="http://i.imgur.com/uPeTerr.jpg?2"></span></a></li>
-                             <li><a href="#"><span class="frolic mimages">&nbsp;<img src="http://i.imgur.com/B2JwogW.jpg?2"></span></a></li>
-                             <li><a href="#"><span class="morose mimages"><img src="http://i.imgur.com/8B2rSn1.jpg?3"></span></a></li>
+                             <li  id="m1"><a href="#"><span class="frolic " >&nbsp;<img src="http://i.imgur.com/uPeTerr.jpg?2"></span></a></li>
+                             <li  id="m2"><a href="#"><span class="frolic " >&nbsp;<img src="http://i.imgur.com/B2JwogW.jpg?2"></span></a></li>
+                             <li  id="m3"><a href="#"><span class="morose" ><img src="http://i.imgur.com/8B2rSn1.jpg?3"></span></a></li>
                      </ul>
                      
                      
@@ -257,25 +257,7 @@
                     </script>
                     <script src="main.js"></script>
                 <script src="mood.js"></script>
-               <script>
-         $(document).ready(function () {
-          $("#slider").slider(
-          {
-              min: 0,
-              max: 100,
-              step: 1,
-              change: showValue
-
-          });
-          $("#update").click(function () {
-              $("#slider").slider("option", "value", $("#seekTo").val());
-
-          });
-          function showValue(event, ui) {
-              $("#val").html(ui.value);
-          }
-      });
-        </script>        
+                 
 
 </body>
  
