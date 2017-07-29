@@ -182,6 +182,16 @@ $('#m3').on('click',function(){
                 'fileName': 'song14.mp3',
                 'image':'song14.jpg'
                 },
+           
+           {
+        'name': 'ik vaari aa bhi jaa',
+        'artist': 'arjit singh',
+        'album': 'Rabbata',
+        'duration': '4:34',
+        'fileName': 'song13.mp3',
+        'image':'song13.jpg'
+    },
+      
             {
                 'name': 'Mae Agar',
                 'artist': 'Atif Aslam',
